@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander')
-
+const create = require('../lib/create.js')
 
 program.version('0.0.1')
 
@@ -13,11 +13,9 @@ program
     })
 
 program
-    .command('create [dir]')
-    .description('create')
-    .action(function (dir) {
-        console.log('create')
-    })
+    .command('create [name]')
+    .description('the project name')
+    .action(create)
 
 
 program.parse(process.argv)
