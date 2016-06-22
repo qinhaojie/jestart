@@ -1,15 +1,18 @@
 {
   "name": "jestart",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "easy to start a project",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/qinhaojie/jestart.git"
+  },
   "scripts": {
     "test":"node ./test/index"
   },
   "bin": {
     "jestart": "./bin/jestart.js"
   },
-  "author": "",
+  "author": "qinhaojie",
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
