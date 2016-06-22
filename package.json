@@ -6,7 +6,7 @@
   "scripts": {
   },
   "bin": {
-    "mycmd": "./bin/jestart.js"
+    "jestart": "./bin/jestart.js"
   },
   "author": "",
   "license": "ISC",
