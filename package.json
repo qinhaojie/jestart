@@ -4,6 +4,7 @@
   "description": "easy to start a project",
   "main": "index.js",
   "scripts": {
+    "test":"node ./test/index"
   },
   "bin": {
     "jestart": "./bin/jestart.js"
