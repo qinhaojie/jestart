@@ -1,7 +1,7 @@
 {
-  "name": "redux-todomvc-example",
+  "name": " ",
   "version": "0.0.0",
-  "description": "Redux TodoMVC example",
+  "description": " ",
   "scripts": {
     "start": "node server.js"
     
