@@ -2,7 +2,7 @@
 'use strict'
 const program = require('commander')
 const create = require('../lib/create.js')
-
+const list = require('../lib/list')
 program.version('0.1.1')
 
 program
@@ -16,4 +16,8 @@ program
     .command('create [name]')
     .description('the project name')
     .action(create)
+program
+    .command('list')
+    .description('list all template')
+    .action(list)
 program.parse(process.argv)
