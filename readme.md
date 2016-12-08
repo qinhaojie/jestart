@@ -8,6 +8,12 @@ $ npm install -g jestart
 
 ### 使用
 
+创建文件名为myApp的项目
 ```
 $ jestart crete myApp
+```
+
+列出所有可以使用的模板
+```
+$ jestart list
 ```
