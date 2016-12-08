@@ -3,7 +3,7 @@
 const program = require('commander')
 const create = require('../lib/create.js')
 const list = require('../lib/list')
-program.version('0.1.1')
+program.version('0.2.0')
 
 program
     .command('help')
