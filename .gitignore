@@ -2,3 +2,4 @@ node_modules
 jsconfig.json
 .gitattributes
 npm-debug.log
+user

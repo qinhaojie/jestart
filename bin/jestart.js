@@ -3,22 +3,29 @@
 const program = require('commander')
 const create = require('../lib/create.js')
 const list = require('../lib/list')
+const add = require('../lib/add')
 require('../lib/color')()
 program.version(require('../package.json').version)
 
 program
-    .command('help')
-    .description('帮助')
-    .action(function() {
-      program.outputHelp()
-    })
+  .command('help')
+  .description('帮助')
+  .action(function () {
+    program.outputHelp()
+  })
 
 program
-    .command('create [name]')
-    .description('the project name')
-    .action(create)
+  .command('create [name]')
+  .description('the project name')
+  .action(create)
 program
-    .command('list')
-    .description('list all template')
-    .action(list)
+  .command('list')
+  .description('list all template')
+  .action(list)
+
+program
+  .command('add <file>')
+  .option('-n, --name <name>', '模板名')
+  .description('添加项目模板文件')
+  .action(add)
 program.parse(process.argv)
