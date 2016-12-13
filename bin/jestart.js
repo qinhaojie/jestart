@@ -25,7 +25,8 @@ program
 
 program
   .command('add <file>')
-  .option('-n, --tname [name]', '模板名')
+  .option('-n, --tname <name>', '模板名')
+  .option('-f, --force', '覆盖')
   .description('添加项目模板文件')
   .action(add)
 program.parse(process.argv)
