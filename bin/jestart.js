@@ -21,6 +21,8 @@ program
 program
   .command('list')
   .description('list all template')
+  .option('-u, --user', '只显示用户模板')
+  .option('-d, --default', '只显示默认模板')
   .action(list)
 
 program
