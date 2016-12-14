@@ -20,6 +20,12 @@ $ jestart crete myApp
 列出所有可以使用的模板
 ```
 $ jestart list
+
+列出用户模板
+$ jestart list -u  
+
+列出默认模板
+$ jestart list -d
 ```
 
 ### add
