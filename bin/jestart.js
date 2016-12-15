@@ -4,6 +4,7 @@ const program = require('commander')
 const create = require('../lib/create.js')
 const list = require('../lib/list')
 const add = require('../lib/add')
+const remove = require('../lib/remove')
 require('../lib/color')()
 program.version(require('../package.json').version)
 
@@ -31,4 +32,10 @@ program
   .option('-f, --force', '覆盖')
   .description('添加项目模板文件')
   .action(add)
+
+program
+  .command('rm <name>')
+  .description('删除模板文件')
+  .action(remove)
+
 program.parse(process.argv)
