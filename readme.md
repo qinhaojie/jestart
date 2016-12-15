@@ -42,6 +42,13 @@ $ jestart add ./myTemp -n myTempName
 $ jestart add ./myTemp -f
 ```
 
+### rm
+删除用户模板
+
+```
+$ jestart rm xxx
+```
+
 ## 提供的模板
 
 0.2.*默认会提供一下模板
